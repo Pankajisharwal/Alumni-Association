@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/project/assets/css/style.css" />
+    
+    <title>CRM JAT COLLEGE</title>
+  </head>
+  <body>
+    <section>
+      <div class="container bg-color banner-height">
+        <div class="banner-text">
+          <img
+            class="logo"
+            src="/logo.png"
+            alt="logo"
+          />
+          <div class="text-center">
+            <h1 class="font-family padding-y-axis-24 text-color">
+              Alumni Association
+            </h1>
+          </div>
+        </div>
+        <div class="home-tab">
+          <ul class="display-flex align-items-center justify-content-center">
+            <li>
+              <a
+                class="padding-x-axis-48 margin-x-axis-24"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="padding-x-axis-48 margin-x-axis-24"
+                href="/aims&obejctive.html"
+                >Aims & Objectives</a
+              >
+            </li>
+            <li>
+              <a
+                class="padding-x-axis-48 margin-x-axis-24"
+                href="/membership.html"
+                >Membership</a
+              >
+            </li>
+            <li class="display-none">
+              <a
+                class="padding-x-axis-48 margin-x-axis-24"
+                href="/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="display-none">
+              <a
+                class="padding-x-axis-48 margin-x-axis-24"
+                target="_blank"
+                href="https://www.crmjatcollege.com/"
+                >Main Website</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="display-flex-below-md align-items-center justify-content-center display-none-above-md"
+          >
+            <li>
+              <a
+                class="padding-x-axis-48 margin-x-axis-24"
+                href="/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="padding-x-axis-48 margin-x-axis-24"
+                target="_blank"
+                href="https://www.crmjatcollege.com/"
+                >Main Website</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="box" >
+        <center>
+            <h2>Registration Form</h2>
+        </center>
+
+    <form action="/project/connection.php" method="post" id="form" class="form" name="form" enctype="multipart/form-data">
+      <div class="form-control">
+         <label>Email Id:</label>
+         <input 
+         autocomplete="off"
+         name="Email"
+         required 
+         id="email"
+         type="email" 
+         placeholder="Email" />
+      
+      </div>
+
+      <div class="form-control">
+          <label>Password:</label>
+          <input 
+          autocomplete="off"
+          name="Password"
+          required 
+          id="pass"
+          type="password" 
+          placeholder="Password" 
+          minlength="8" />
+          
+       </div> 
+
+
+      <div class="form-control">
+      <label>Name:</label>
+      <input
+      autocomplete="off"
+      name="Name"
+      required 
+      id="username"
+      type="text" 
+      placeholder="Name" /> 
+      </div>
+
+     <div class="form-control">
+      <label>Father Name:</label>
+      <input
+      required
+      autocomplete="off"
+      name="Father_name"
+      id="fname"
+       type="text" 
+       placeholder="Father Name"/> 
+      </div>
+
+      <div class="form-control1">
+      <label>Mobile NO.:</label>
+      <input
+      autocomplete="off"
+      name="Mobile"
+      id="'mob"
+       type="tel"
+       maxlength="10" 
+       placeholder="Mobile No."
+       /> 
+      </div>
+      
+      <div class="form-control">
+      <label>DOB:</label>
+      <input
+      autocomplete="off"
+      name="dob"
+      required 
+      id="dob"
+       type="date" 
+        />
+      </div>
+
+      <div class="form-control1">
+        <label>Course:</label>
+        <select required name="Course" id="course" class="selectbox" >
+          <option value="Choose" disabled selected>Choose</option>
+          <option value="BACHELOR OF ARTS">BACHELOR OF ARTS</option>
+          <option value="B.SC. NON-MEDICAL">B.SC. NON-MEDICAL</option>
+          <option value="B.SC. COMPUTER SCIENCE">B.SC. COMPUTER SCIENCE</option>
+          <option value="B.SC. MEDICAL">B.SC. MEDICAL</option>
+          <option value="B.SC. ELECTRONICS">B.SC. ELECTRONICS</option>
+          <option value="B.SC. BIO-TECHNOLOGY">B.SC. BIO-TECHNOLOGY</option>
+          <option value="B.SC. INDUSTRIAL CHEMISTRY">B.SC. INDUSTRIAL CHEMISTRY</option>
+          <option value="B COM">B COM</option>
+          <option value="BCA">BCA</option>
+          <option value="M COM">M COM</option>
+          <option value="MA HINDI">MA HINDI</option>
+          <option value="MA ENGLISH">MA ENGLISH</option>
+          <option value="M.SC. MATH">M.SC. MATH</option>
+          <option value="M.SC. ZOOLOGY">M.SC. ZOOLOGY</option>
+          <option value="M.SC(IT)">M.SC(IT)</option>
+          <option value="PREP">PREP</option>
+          <option value="INTER">INTER</option>
+        </select>
+        </div>
+      
+      
+      
+      <div class="form-control1">
+      <label>Present job:</label>
+      <select required name="Present_job" id="pre" class="selectbox">
+        <option value="Choose" disabled selected>Choose</option>
+        <option value="Government Job">Government Job</option>
+        <option value="Private Job">Private Job</option>
+        <option value="Bussinessman">Bussinessman</option>
+        <option value="Farmer">Farmer</option>
+        <option value="Social Worker">Social Worker</option>
+        <option value="Part of NGO">Part of NGO</option>
+        <option value="Politician">Politician</option>
+        <option value="Celebrity">Celebrity</option>
+        <option value="Writer">Writer</option>
+        <option value="Poet">Poet</option>
+        <option value="Singer">Singer</option>
+        <option value="Film Personality">Film Personality</option>
+        <option value="Advocate">Advocate</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Administrative Services">Administrative Services</option>
+        <option value="Self Employed">Self Employed</option>
+        <option value="Shopkeeper">Shopkeeper</option>
+        <option value="Army Officer">Army Officer</option>
+        <option value="Sportsman">Sportsman</option>
+        <option value="Bank Employee">Bank Employee</option>
+        <option value="Semi Government">Semi Government</option>
+        <option value="Others">Others</option>
+      </select>
+      
+      </div>
+      
+      <div class="form-control1">
+      <label>If Job is "OTHER",Mention Your Job Title:</label>
+      <input
+      autocomplete="off"
+      name="Other"
+      id="other"
+       type="text" /> 
+      </div>
+      
+      <div class="form-control1">
+      <label>Designation:</label>
+      <input
+      autocomplete="off"
+      name="Designation"
+      id="des"
+       type="text" 
+       placeholder="Designation" /> 
+      </div>
+      
+      <div class="form-control1">
+      <label>Office Address:</label>
+      <input
+      autocomplete="off"
+      name="Offc_add"
+      id="offc_add"
+       type="text" 
+       placeholder="Office Address" /> 
+      </div>
+      
+      <div class="form-control">
+      <label>Permanent Address:</label>
+      <input
+      required
+      autocomplete="off"
+      name="P_add"
+      id="p_add"
+       type="text" 
+       placeholder="Permanent Address" 
+      /> 
+      </div>
+      
+      <div class="form-control">
+      <label>Admission Year:</label>
+      <input
+      required
+      autocomplete="off"
+      name="Admsn_in"
+      id="admsn_in"
+       type="number" 
+       placeholder="Year" 
+       maxlength="4"
+       /> 
+      </div>
+      
+      <div class="form-control">
+      <label>Year of Pass out:</label>
+      <input
+      required
+      autocomplete="off"
+      name="Admsn_out"
+      id="admsn_out"
+       type="year" 
+       placeholder="Year" 
+       maxlength="4"
+       /> 
+      </div>
+      
+      
+      
+      <div class="form-control1">
+      <label>Achievement :</label>
+      <input
+      autocomplete="off"
+      name="Achievement"
+      id="ach"
+      placeholder="Achievement"
+       type="text" /> 
+      </div>
+
+       <div class="form-control">
+      <label>Passport Size Photo:</label>
+      <input
+      autocomplete="off"
+      name="Photo"
+      required 
+      id="photo"
+       type="file" 
+        /> 
+      </div>
+      
+      <div class="form-control">
+      <label>Payment Receipt:</label>
+      <input
+      autocomplete="off"
+      name="Fee"
+      required 
+      id="fee"
+       type="file" 
+       placeholder="Receipt" 
+      /> 
+     </div> 
+      <center>
+        <input type="submit" name="submit" value="submit" class="btn" />
+        <input type="reset" value="reset" onclick="removeColor()" class="btn" />
+      </center>
+    </form>
+    </div>
+    <!-- <script src="/project/form.js" ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <div class="footer"> CRM JAT College Hisar Copyright &copy; 2023 </div>  
+  </body>
+</html>
